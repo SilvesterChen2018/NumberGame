@@ -36,7 +36,7 @@ public class GameTestNG {
         for (int num = 1; num <= pupilCount; num++) {
             String num_str = String.valueOf(num);
 
-            if ((num % 3 == 0 && num % 5 == 0) || (num_str.contains("3") && num_str.contains("5"))) {
+            if ((num % 3 == 0 || num_str.contains("3")) && (num % 5 == 0 || num_str.contains("5"))) {
                 System.out.println("FizzBuzz");
             } else if (num % 3 == 0 || num_str.contains("3")) {
                 System.out.println("Fizz");
